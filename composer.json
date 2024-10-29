@@ -1,0 +1,40 @@
+{
+    "name": "iliasdaniel/brainsso",
+    "description": "Laravel Application to interact with SSO with main server using Laravel Passport",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ilias",
+            "email": "iliasdaniel1403@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/ilias1403/sso-application-auth",
+    "keywords": ["Laravel", "Brainsso"],
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Iliasdaniel\\Brainsso\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Iliasdaniel\\Brainsso\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Iliasdaniel\\Brainsso\\BrainssoServiceProvider"
+            ],
+            "aliases": {
+                "Brainsso": "Iliasdaniel\\Brainsso\\Facades\\Brainsso"
+            }
+        }
+    }
+}
